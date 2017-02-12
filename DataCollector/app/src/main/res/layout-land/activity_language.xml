@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:text="@string/textView_chooseLang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewChooseLang"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonGB"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:background="@drawable/gb"
+        android:onClick="clickEnButton"
+        android:visibility="visible"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonPL"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pl"
+        android:onClick="clickPlButton"
+        tools:visibility="visible"
+        android:layout_alignTop="@+id/buttonGB"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonDE"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:background="@drawable/de"
+        android:onClick="clickDeButton"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/buttonPL"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
